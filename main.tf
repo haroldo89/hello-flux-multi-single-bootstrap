@@ -1,3 +1,10 @@
+provider "google-beta" {
+  credentials = file("secure_file/credentials.json")
+}
+
+provider "google" {
+  credentials = file("secure_file/credentials.json")
+}
 terraform {
   required_providers {
     kubectl = {
